@@ -32,7 +32,7 @@ _Fev 2026 – Presente_
 
 ## Projetos
 
-**[Sistema de Gestão de Produção e Manutenção](https://github.com/NicolasBisc)**
+**[Sistema-de-Gestão-de-Produção-e-Manutenção](https://github.com/NicolasBisc)**
 Aplicação web para centralizar os dados operacionais da empresa, com
 módulos de Produção, Manutenção, Auditoria e Gestão de Férias — histórico
 de dados, cadastro de máquinas e dashboards de Meta x Realizado. Em fase de
