@@ -1,64 +1,92 @@
 # Nicolas Biscaia
 
-Estudante de Engenharia de Software, apaixonado por transformar ideias em
-soluções práticas. Atuo como Aprendiz em Tecnologia na Koube Química do
-Brasil, onde automatizo processos, estruturo dados operacionais e desenvolvo
-ferramentas internas.
+Estudante de Engenharia de Software e Aprendiz em Tecnologia na **Koube
+Química do Brasil**. Transformo processos manuais da fábrica em software que
+funciona no dia a dia: hoje mantenho um sistema de produção e manutenção que
+substituiu um conjunto de planilhas e está **em operação interna desde agosto
+de 2026**.
 
-Busco oportunidade como Desenvolvedor Júnior ou Estágio em Desenvolvimento
-de Software.
+Busco oportunidade como **Desenvolvedor Júnior** ou **Estágio em
+Desenvolvimento de Software**.
 
-## Em desenvolvimento
+📍 Araucária-PR · [nicolasbiscaia.dev](https://nicolasbiscaia.dev) ·
+[LinkedIn](https://www.linkedin.com/in/nicolasbiscaia/)
 
-Construindo uma base sólida em lógica de programação e Python, com
-Front-End em HTML e CSS. Iniciando estudos em Java e banco de dados com SQL.
-Tenho contato com documentação e estruturação de processos — BPMN, casos de
-uso, jornada do usuário e usabilidade.
+---
+
+## Projetos em destaque
+
+### [Sistema de Gestão de Produção e Manutenção](https://github.com/NicolasBisc/Sistema-de-Producao-Koube)
+**Em produção na Koube** · [ver interface](https://koube-producao.vercel.app/)
+
+Centraliza programação de produção, manutenção preventiva e corretiva,
+colaboradores, férias, auditoria e indicadores, antes espalhados em planilhas
+paralelas com numeração duplicada e cálculos feitos à mão.
+
+- Backend em **FastAPI** com 41 endpoints, 16 tabelas e validação
+  **Pydantic** em todas as rotas de escrita
+- O vencimento e o status das preventivas são **calculados** a partir da
+  última execução, sem campo de status para alguém esquecer de atualizar
+- **Segurança:** autenticação JWT, senhas com bcrypt, permissão por módulo,
+  rate limit e bloqueio após tentativas de login
+- **Auditoria completa:** toda alteração guarda autor, ação e os valores
+  antes e depois
+- **Operação:** Docker, migrações SQL idempotentes, backup diário com
+  retenção de 30 dias e testes de interface com Playwright
+- Base com 44 equipamentos, 255 atividades preventivas e cerca de 790 ordens
+  de serviço. O repositório público usa uma cópia sem dados pessoais.
+
+`Python` `FastAPI` `PostgreSQL` `JavaScript` `HTML/CSS` `Docker` `Playwright`
+
+### [Koube-Analise-Envase](https://github.com/NicolasBisc/Koube-Analise-Envase)
+
+Automatiza os relatórios do setor de Envase: lê a planilha de programação do
+mês e gera em Word o dashboard semanal de programado vs. realizado e o
+progresso acumulado da meta.
+
+- Reescrevi os scripts originais como um pacote organizado, com CLI e testes
+  das regras de cálculo
+- Os dois relatórios passaram a sair da mesma fonte, o que acabou com a
+  digitação em dobro e as divergências entre eles
+- Corrigi bugs que geravam números errados nos relatórios: sinal negativo
+  sumindo, data de emissão quebrada e média diária calculada sobre o divisor
+  errado
+- A leitura de dados ficou isolada, então os relatórios podem passar a usar
+  o sistema de produção sem reescrita
+
+`Python` `python-docx` `Matplotlib` `unittest`
+
+---
 
 ## Experiência
 
-**Koube Química do Brasil** — Aprendiz, Auxiliar Administrativo / Tecnologia
-_Fev 2026 – Presente_
+**Koube Química do Brasil**, Aprendiz em Tecnologia / Auxiliar Administrativo
+_Fev 2026 – presente_
 
-- Automação de relatórios e análise de dados com Python, substituindo
-  tarefas manuais por processos ágeis e de maior precisão.
-- Desenvolvimento de sistema de treinamento interativo sobre a metodologia
-  5S, construído do zero em HTML e CSS.
-- Atuação no TOTVS ERP para gestão de requisições, com integração a
-  dashboards estratégicos em Excel Avançado.
-- Centralização e organização do acervo digital da empresa no SharePoint.
-- Estruturação de dados operacionais e ferramentas para registro de
-  manutenções corretivas e acompanhamento de indicadores da fábrica.
+- Desenvolvi e coloquei em operação o sistema de gestão de produção e
+  manutenção descrito acima
+- Automatizei relatórios e análises de dados com Python, substituindo
+  tarefas manuais
+- Criei um treinamento interativo sobre a metodologia 5S em HTML e CSS
+- Atuo no TOTVS ERP com requisições e dashboards em Excel avançado
+- Organizei e centralizei o acervo digital da empresa no SharePoint
 
-## Projetos
+## Tecnologias
 
-**[Sistema-de-Gestão-de-Produção-e-Manutenção](https://github.com/NicolasBisc)**
-Aplicação web para centralizar os dados operacionais da empresa, com
-módulos de Produção, Manutenção, Auditoria e Gestão de Férias — histórico
-de dados, cadastro de máquinas e dashboards de Meta x Realizado. Em fase de
-testes e implantação via Docker.
-`HTML` `CSS` `JavaScript` `Python` `PostgreSQL` `Docker`
-
-**[Koube-Analise-Envase](https://github.com/NicolasBisc/Koube-Analise-Envase)**
-Geração automatizada dos relatórios de produção do setor de Envase, a partir
-da planilha de programação mensal — dashboard semanal e progresso
-acumulado da meta, em Word.
-`Python` `Pandas` `OpenPyXL` `Matplotlib`
+**Uso no dia a dia:** Python · FastAPI · PostgreSQL / SQL · JavaScript ·
+HTML · CSS · Docker · Git · Excel avançado
+**Estudando:** Java · modelagem de banco de dados · testes automatizados
+**Processos:** BPMN · casos de uso · jornada do usuário · usabilidade
 
 ## Formação
 
-**Universidade Positivo** — Bacharelado em Engenharia de Software
-_Mar 2026 – Presente_
+**Universidade Positivo**, Bacharelado em Engenharia de Software
+_Mar 2026 – presente_
 
 ## Certificados
 
-- Python para Dados — Alura
-- Desenvolvimento Back End com Java — Alura
-- Inteligência Emocional — Fundação Bradesco
-- Excel do Básico ao Avançado — Fundação Bradesco
-- Atendimento ao Público — Fundação Bradesco
-
-## Contato
-
-- [nicolasbiscaia.dev](https://nicolasbiscaia.dev)
-- [LinkedIn](https://www.linkedin.com/in/nicolasbiscaia/)
+- Python para Dados, Alura
+- Desenvolvimento Back End com Java, Alura
+- Excel do Básico ao Avançado, Fundação Bradesco
+- Inteligência Emocional, Fundação Bradesco
+- Atendimento ao Público, Fundação Bradesco
